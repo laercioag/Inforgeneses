@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="calculadora.js"></script>
+</head>
+<body>
+	<div id="cabecalho" class="cabecalho">
+		<h1>SOMA DE DOIS NUMEROS</h1>
+	</div>
+
+	<div id="empty_field"></div>
+
+	<div>
+		<form method="POST" onsubmit="return validate();" action="/realizar_soma.php">
+			<label for="numero1">numero1: </label>
+			<input type="text" name="numero1" id="numero1">
+			<br>
+			<label for="numero2">numero2: </label>
+			<input type="text" name="numero2" id="numero2">
+			<br>
+			<button type="submit">calcular</button>
+		</form>
+	</div>
+</body>
+<html>
